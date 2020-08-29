@@ -16,21 +16,23 @@ public class medianOfThreeNumbers {
         int b = 1;
         int c = 2;
 
+        String message = " is the median value";
+
         if (array[a] > array[b]) {
             if (array[b] > array[c]) {
-                return array[b] + " is the middle value";
+                return array[b] + message;
             } else if (array[a] > array[c]) {
-                return array[c] + " is the middle value";
+                return array[c] + message;
             } else {
-                return array[a] + " is the middle value";
+                return array[a] + message;
             }
         } else {
             if (array[a] > array[c]) {
-                return array[a] +" is the middle value";
+                return array[a] + message;
             } else if (array[b] > array[c]) {
-                return array[c] + " is the middle value";
+                return array[c] + message;
             } else {
-                return array[b] + " is the middle value";
+                return array[b] + message;
             }
         }
     }
