@@ -12,27 +12,24 @@ public class medianOfThreeNumbers {
     }
 
     private static String getMedian(int[] array) {
-        int a = 0;
-        int b = 1;
-        int c = 2;
 
         String message = " is the median value";
 
-        if (array[a] > array[b]) {
-            if (array[b] > array[c]) {
-                return array[b] + message;
-            } else if (array[a] > array[c]) {
-                return array[c] + message;
+        if (array[0] > array[1]) {
+            if (array[1] > array[2]) {
+                return array[1] + message;
+            } else if (array[0] > array[2]) {
+                return array[2] + message;
             } else {
-                return array[a] + message;
+                return array[0] + message;
             }
         } else {
-            if (array[a] > array[c]) {
-                return array[a] + message;
-            } else if (array[b] > array[c]) {
-                return array[c] + message;
+            if (array[0] > array[2]) {
+                return array[0] + message;
+            } else if (array[1] > array[2]) {
+                return array[2] + message;
             } else {
-                return array[b] + message;
+                return array[1] + message;
             }
         }
     }
